@@ -8,7 +8,8 @@ import datetime;
 State = str(sys.argv[1])  #'Makkah' #'Riyad' #'Madenna
 date_since = str(sys.argv[2]) #'2021-06-25'
 date_until = str(sys.argv[3]) #'2021-06-24'
-language = str(sys.argv[4])
+language = str(sys.argv[4]) # 'en' #'ar'
+
 if (language == 'en'):
 	keywords_file = "Keywords/EnglishKeywords"
 else:
@@ -19,16 +20,17 @@ try:
     # it's about time to create a TwitterSearch object with your secret tokens
     ts = TwitterSearch(
   	 consumer_key = '',
-	   consumer_secret = '',
+	 consumer_secret = '',
   	 access_token= '',
-	   access_token_secret= ''
-)
-
+	 access_token_secret= '')
+	
+    #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
     def my_callback_closure(current_ts_instance): # accepts ONE argument: an instance of TwitterSearch
         queries, tweets_seen = current_ts_instance.get_statistics()
         if queries > 0 and (queries % 5) == 0: # trigger delay every 5th query
             time.sleep(60) # sleep for 60 seconds
-            
+		
+    #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------        
     def retrieve_tweets(search_url, previous_count):
     	tso = TwitterSearchOrder() # create a TwitterSearchOrder object
     	print (search_url)
@@ -56,7 +58,7 @@ try:
     	return count
     
     
-    #######################################################
+    ########################################################################################################################################################################################
     with open('tweets_'+State+'_'+date_since+'_'+language+'_duplicates.json', 'a') as f:
     		f.write("[") 
       			
