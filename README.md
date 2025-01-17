@@ -10,16 +10,13 @@ Similar datasets can be generated for different regions and events by:
 The dataset generated using this crawler can be accessed at [KSAGeoCOV](https://kaggle.com/datasets/5e2c333e22d6edca5ee813c84c964e00d682c4aabb3e04b53f85156ba1c52cc6).
 
 # Publications
-    @article{elteir2024ksadataset,  
-      title =  {Cost-Effective Time-Efficient Subnational-Level Surveillance Using Twitter: Kingdom of Saudi Arabia Case Study},    
-      author = {Marwa K. Elteir},
-      journal = {Discover Applied Sciences},
-      volume = {},
-      number = {},
-      pages = {},
-      year = {2024},
-      issn = {3004-9261},
-      doi = {},
-      url = {},
+     @article{elteir2025cost,
+      title={Cost-effective time-efficient subnational-level surveillance using Twitter: Kingdom of Saudi Arabia case study},
+      author={Elteir, Marwa K},
+      journal={Discover Applied Sciences},
+      volume={7},
+      number={1},
+      pages={60},
+      year={2025},
       publisher={Springer}
     }
